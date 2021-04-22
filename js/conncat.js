@@ -1,22 +1,4 @@
 
-// function horizantal(i) {
-//     (i + 4) < btnArray.length &&
-//     btnArray[i].style.background === btnArray[i + 1].style.background &&
-//     btnArray[i + 1].style.background === btnArray[i + 2].style.background &&
-//     btnArray[i + 2].style.background === btnArray[i + 3].style.background &&
-//     btnArray[i + 3].style.background === btnArray[i + 4].style.background
-
-
-// }
-
-// function horizantalplus(i) {
-//     (i - 4) >= 0 &&
-//         btnArray[i].style.background === btnArray[i - 1].style.background &&
-//         btnArray[i - 1].style.background === btnArray[i - 2].style.background &&
-//         btnArray[i - 2].style.background === btnArray[i - 3].style.background &&
-//         btnArray[i - 3].style.background === btnArray[i - 4].style.background
-
-// }
 
 
 var allbutton = document.getElementsByClassName("btn");
@@ -29,9 +11,11 @@ for (let i = 0; i < allbutton.length; i++) {
         } else {
             counter++;
             if (counter % 2 == 0) {
-                allbutton[i].style.background = "blue";
+                allbutton[i].style.background = "green";
+
             } else {
-                allbutton[i].style.background = "black";
+                allbutton[i].style.background = "brown";
+
             }
         }
 
@@ -55,12 +39,10 @@ btnArray.forEach(btn => {
             btnArray[i + 2].style.background === btnArray[i + 3].style.background &&
             btnArray[i + 3].style.background === btnArray[i + 4].style.background
 
-
             // horizantal(i)
 
 
         ) {
-            // alert("The Winner Is " + btnArray[i].style.background)
             masseg.style.display = "block";
             palyAgin.style.display = "block";
             masseg.innerText = "Congratulation The Winner Is " + btnArray[i].style.background
@@ -75,7 +57,6 @@ btnArray.forEach(btn => {
             // horizantalplus(i)
 
         ) {
-            // alert("The Winner Is " + btnArray[i].style.background)
             masseg.style.display = "block";
             palyAgin.style.display = "block";
 
@@ -90,7 +71,6 @@ btnArray.forEach(btn => {
             btnArray[i + 21].style.background === btnArray[i + 28].style.background
 
         ) {
-            // alert("The Winner Is " + btnArray[i].style.background)
             masseg.style.display = "block";
             palyAgin.style.display = "block";
             masseg.innerText = "Congratulation The Winner Is " + btnArray[i].style.background
@@ -104,7 +84,6 @@ btnArray.forEach(btn => {
             btnArray[i - 14].style.background === btnArray[i - 21].style.background &&
             btnArray[i - 21].style.background === btnArray[i - 28].style.background
         ) {
-            // alert("The Winner Is " + btnArray[i].style.background)
             masseg.style.display = "block";
             palyAgin.style.display = "block";
             masseg.innerText = "Congratulation The Winner Is " + btnArray[i].style.background
