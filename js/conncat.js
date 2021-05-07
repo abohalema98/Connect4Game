@@ -123,4 +123,6 @@ btnArray.forEach(btn => {
 
 
 
-
+window.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+})
